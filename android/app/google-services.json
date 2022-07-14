@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "655651127892",
+    "project_id": "snuggles-squad-app",
+    "storage_bucket": "snuggles-squad-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655651127892:android:1df7c111f606873d9d23c1",
+        "android_client_info": {
+          "package_name": "com.example.snuggles_squad_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655651127892-jook1c8uedl1s9p0rv009k2ngg2t03gu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9JCvZBGZlAQKGfwMQzwrvy67V-GJ65R4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655651127892-jook1c8uedl1s9p0rv009k2ngg2t03gu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
