@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
-options: "9a1a92567da5ba281853eeb8aa848932366c22d4c906cd6a3183548b7eafb970"
-build_start_time: [1657775742, 894392967]
-build_end_time: [1657775756, 452702999]
-inputs:
-  "/Users/rameshmahapatra/Desktop/Snuggles-Squad-App/macos/Flutter/GeneratedPluginRegistrant.swift": [1657775689, 283168315]
-  "/Users/rameshmahapatra/Desktop/Snuggles-Squad-App/macos/Runner/AppDelegate.swift": [1652972494, 0]
-  "/Users/rameshmahapatra/Desktop/Snuggles-Squad-App/macos/Runner/MainFlutterWindow.swift": [1652972494, 0]

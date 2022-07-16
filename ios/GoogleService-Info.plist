@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>655651127892-psdljno845orog1ofo2c9kfft9u6dtqs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.655651127892-psdljno845orog1ofo2c9kfft9u6dtqs</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>655651127892-sojf39cnacc906q37gla3iqdclabnd6p.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCXbRuDoa3zRpThX985Bj-4edtswUxAzr8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>655651127892</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.snugglesSquadApp</string>
+	<key>PROJECT_ID</key>
+	<string>snuggles-squad-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snuggles-squad-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:655651127892:ios:6144ccaef4b9f1c39d23c1</string>
+</dict>
+</plist>
