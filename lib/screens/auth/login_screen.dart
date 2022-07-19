@@ -89,8 +89,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                   padding: EdgeInsets.zero, // and this
                                 ),
                                 onPressed: () {
-                                  // Navigator.of(context)
-                                  //     .pushNamed(ReflectScreen.routeName);
+                                  Navigator.of(context)
+                                      .pushNamed(ReflectScreen.routeName);
                                 },
                                 child: Text("FORGOT PASSWORD",
                                     style: TextStyle(
