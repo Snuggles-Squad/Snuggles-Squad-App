@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:snuggles_squad_app/components/custom_input_decorator.dart';
 import 'package:snuggles_squad_app/screens/auth/register_screen.dart';
-import 'package:snuggles_squad_app/screens/reflect_screen.dart';
 
 import '../../services/fb_auth_service.dart';
+import '../profile_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                                 onPressed: () {
                                   Navigator.of(context)
-                                      .pushNamed(ReflectScreen.routeName);
+                                      .pushNamed(ProfileScreen.routeName);
                                 },
                                 child: Text("FORGOT PASSWORD",
                                     style: TextStyle(

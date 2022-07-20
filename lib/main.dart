@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:snuggles_squad_app/screens/auth/login_screen.dart';
 import 'package:snuggles_squad_app/screens/auth/register_screen.dart';
-
-import 'package:snuggles_squad_app/screens/reflect_screen.dart';
+import 'package:snuggles_squad_app/screens/profile_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         LoginScreen.routeName: (context) => LoginScreen(),
         RegisterScreen.routeName: (context) => RegisterScreen(),
-        ReflectScreen.routeName: (context) => ReflectScreen()
+        ProfileScreen.routeName: (context) => ProfileScreen()
       },
     );
   }

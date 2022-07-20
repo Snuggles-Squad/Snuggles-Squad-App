@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class ReflectScreen extends StatefulWidget {
-  const ReflectScreen({Key? key}) : super(key: key);
-  static const routeName = "/reflect-screen";
+class ProfileScreen extends StatefulWidget {
+  const ProfileScreen({Key? key}) : super(key: key);
+
+  static const routeName = "/profile-screen";
   @override
-  State<ReflectScreen> createState() => _ReflectScreenState();
+  State<ProfileScreen> createState() => _ProfileScreenState();
 }
 
-class _ReflectScreenState extends State<ReflectScreen> {
+class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
