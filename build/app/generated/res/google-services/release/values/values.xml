@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">655651127892-jook1c8uedl1s9p0rv009k2ngg2t03gu.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">655651127892</string>
+    <string name="google_api_key" translatable="false">AIzaSyC9JCvZBGZlAQKGfwMQzwrvy67V-GJ65R4</string>
+    <string name="google_app_id" translatable="false">1:655651127892:android:1df7c111f606873d9d23c1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC9JCvZBGZlAQKGfwMQzwrvy67V-GJ65R4</string>
+    <string name="google_storage_bucket" translatable="false">snuggles-squad-app.appspot.com</string>
+    <string name="project_id" translatable="false">snuggles-squad-app</string>
+</resources>
