@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:snuggles_squad_app/screens/dashboard_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -16,9 +17,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          leading: Image.asset(
-            "assets/images/ss1.png",
-          ),
+          leading: GestureDetector(
+              onTap: () =>
+                  Navigator.of(context).pushNamed(DashBoardScreen.routeName),
+              child: Image.asset(
+                "assets/images/ss1.png",
+              )),
           backgroundColor: Colors.black,
           title: Text(
             "PROFILE",
