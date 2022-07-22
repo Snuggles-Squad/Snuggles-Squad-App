@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:snuggles_squad_app/components/drawer_widget.dart';
 import 'package:snuggles_squad_app/screens/dashboard_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -12,9 +13,11 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        key: _scaffoldKey,
         appBar: AppBar(
           centerTitle: true,
           leading: GestureDetector(
@@ -33,13 +36,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 fontStyle: FontStyle.italic),
           ),
           actions: [
-            Icon(
-              Icons.menu,
-              color: Colors.white,
-              size: 50,
-            ),
+            IconButton(
+                onPressed: () {
+                  if (!_scaffoldKey.currentState!.isDrawerOpen) {
+                    _scaffoldKey.currentState?.openDrawer();
+                  } else {
+                    _scaffoldKey.currentState?.openEndDrawer();
+                  }
+                },
+                icon: Icon(
+                  Icons.menu,
+                  color: Colors.white,
+                  size: 50,
+                )),
           ],
         ),
+        drawer: DrawerWidget(),
         body: SafeArea(
           child: Column(
             children: [

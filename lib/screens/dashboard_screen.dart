@@ -2,6 +2,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import 'package:flutter/material.dart';
+import 'package:snuggles_squad_app/components/drawer_widget.dart';
 
 class DashBoardScreen extends StatefulWidget {
   const DashBoardScreen({Key? key}) : super(key: key);
@@ -12,10 +13,14 @@ class DashBoardScreen extends StatefulWidget {
 
 class _DashBoardScreenState extends State<DashBoardScreen> {
   final listItems = ["EDUCATE", "REFLECT", "UNWIND", "DREAM", "SHOP"];
+  bool isOpen = false;
+  GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        key: _scaffoldKey,
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           centerTitle: true,
           leading: Image.asset(
             "assets/images/ss1.png",
@@ -30,13 +35,22 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
                 fontStyle: FontStyle.italic),
           ),
           actions: [
-            Icon(
-              Icons.menu,
-              color: Colors.white,
-              size: 50,
-            ),
+            IconButton(
+                onPressed: () {
+                  if (!_scaffoldKey.currentState!.isDrawerOpen) {
+                    _scaffoldKey.currentState?.openDrawer();
+                  } else {
+                    _scaffoldKey.currentState?.openEndDrawer();
+                  }
+                },
+                icon: Icon(
+                  Icons.menu,
+                  color: Colors.white,
+                  size: 50,
+                )),
           ],
         ),
+        drawer: DrawerWidget(),
         body: SafeArea(
             child: Padding(
           padding: EdgeInsets.all(20),

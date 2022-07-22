@@ -3,7 +3,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:snuggles_squad_app/screens/auth/login_screen.dart';
 import 'package:snuggles_squad_app/screens/auth/register_screen.dart';
 import 'package:snuggles_squad_app/screens/dashboard_screen.dart';
+import 'package:snuggles_squad_app/screens/note_detail_screen.dart';
 import 'package:snuggles_squad_app/screens/profile_screen.dart';
+import 'package:snuggles_squad_app/screens/recordings_detail_screen.dart';
+import 'package:snuggles_squad_app/screens/reflect_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +27,10 @@ class MyApp extends StatelessWidget {
         LoginScreen.routeName: (context) => LoginScreen(),
         RegisterScreen.routeName: (context) => RegisterScreen(),
         ProfileScreen.routeName: (context) => ProfileScreen(),
-        DashBoardScreen.routeName: (context) => DashBoardScreen()
+        DashBoardScreen.routeName: (context) => DashBoardScreen(),
+        RefelctScreen.routenName: (context) => RefelctScreen(),
+        NoteDetailScreen.routeName: (context) => NoteDetailScreen(),
+        RecordingsDetailScreen.routeName: (context) => RecordingsDetailScreen()
       },
     );
   }

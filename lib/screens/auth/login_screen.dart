@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:snuggles_squad_app/components/custom_input_decorator.dart';
 import 'package:snuggles_squad_app/screens/auth/register_screen.dart';
+import 'package:snuggles_squad_app/screens/dashboard_screen.dart';
 
 import '../../services/fb_auth_service.dart';
 import '../profile_screen.dart';
@@ -88,10 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   minimumSize: Size.zero, // Set this
                                   padding: EdgeInsets.zero, // and this
                                 ),
-                                onPressed: () {
-                                  Navigator.of(context)
-                                      .pushNamed(ProfileScreen.routeName);
-                                },
+                                onPressed: () {},
                                 child: Text("FORGOT PASSWORD",
                                     style: TextStyle(
                                         fontStyle: FontStyle.italic,
@@ -117,14 +115,19 @@ class _LoginScreenState extends State<LoginScreen> {
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black)),
                         onPressed: () async {
+                          Navigator.of(context)
+                              .pushNamed(DashBoardScreen.routeName);
                           await fbAuthService
                               .signInWithEmailAndPassword(
                                   email: _emailController.text,
                                   password: _passwordController.text)
-                              .then((value) => ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(
-                                    content: Text("Login Successfull"),
-                                  )));
+                              .then((value) {
+                            if (value != null)
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(SnackBar(
+                                content: Text("Login Successfull"),
+                              ));
+                          });
                         },
                       )
                     ])),

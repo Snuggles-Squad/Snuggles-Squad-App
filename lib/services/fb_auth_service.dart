@@ -3,7 +3,7 @@ import 'package:snuggles_squad_app/model/user_model.dart';
 
 class FbAuthService {
   static final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-  Future<UserDetails?> signInWithEmailAndPassword({
+  Future signInWithEmailAndPassword({
     required String email,
     required String password,
   }) async {
@@ -13,6 +13,7 @@ class FbAuthService {
         password: password,
       );
       print(userCredential.user?.email);
+      return userCredential.user;
 
       //return _mapFirebaseUser(userCredential.user);
     } on FirebaseAuthException catch (e) {

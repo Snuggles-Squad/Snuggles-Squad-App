@@ -6,28 +6,6 @@ class UserDetails {
 
   DateTime? creationDateTime;
 
-//  UserDetails({
-//    required this.uid,
-//    required this.name,
-//    required this.mail,
-//    required this.userType,
-//  }) {
-//    setCreationTime();
-//  }
-
-  // UserDetails.fromFbUser(FUser fuser) {
-  //   uid = fuser.uid;
-  //   name = fuser.displayName;
-  //   phone = fuser.phoneNumber;
-  //   mail = fuser.email;
-  //   creationDateTime = fuser.metadata.creationTime;
-  // }
-
-  // void setCreationTime() async {
-  //   final fuser = await FbAuthService.fUser.first;
-  //   creationDateTime = fuser?.metadata.creationTime;
-  // }
-
   UserDetails.fromFbMap(Map<String, dynamic> map) {
     uid = map['uid'];
     name = map['name'];
