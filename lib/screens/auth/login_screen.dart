@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 import 'package:snuggles_squad_app/components/custom_input_decorator.dart';
@@ -26,10 +28,10 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/ss.png",
+              "assets/images/logo.png",
             ),
             SizedBox(
-              height: 20,
+              height: 100,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width / 1.7,
@@ -89,7 +91,9 @@ class _LoginScreenState extends State<LoginScreen> {
                                   minimumSize: Size.zero, // Set this
                                   padding: EdgeInsets.zero, // and this
                                 ),
-                                onPressed: () {},
+                                onPressed: () {
+                                 
+                                },
                                 child: Text("FORGOT PASSWORD",
                                     style: TextStyle(
                                         fontStyle: FontStyle.italic,
@@ -137,3 +141,4 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+

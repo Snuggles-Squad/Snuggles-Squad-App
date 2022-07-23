@@ -22,10 +22,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/images/ss.png",
+              "assets/images/logo.png",
             ),
             SizedBox(
-              height: 20,
+              height: 100,
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width / 1.7,

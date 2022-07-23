@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "FLTFirebaseStoragePlugin 2.h"
 #import "FLTFirebaseStoragePlugin.h"
 
 FOUNDATION_EXPORT double firebase_storageVersionNumber;

@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       initialRoute: LoginScreen.routeName,
+      theme: ThemeData(
+          fontFamily: 'Satoshi', scaffoldBackgroundColor: Colors.white),
       routes: {
         LoginScreen.routeName: (context) => LoginScreen(),
         RegisterScreen.routeName: (context) => RegisterScreen(),
