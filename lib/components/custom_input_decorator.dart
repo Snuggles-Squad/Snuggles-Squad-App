@@ -40,25 +40,20 @@ class CustomInputDecorator {
       [bool invert = false]) {
     final border = OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(5.0),
+        Radius.circular(10.0),
       ),
-      borderSide: BorderSide(width: 2, color: Colors.black),
+      borderSide: BorderSide(color: Colors.grey[300]!),
     );
     final style = TextStyle(
-        color: Colors.black,
-        fontSize: 20,
-        letterSpacing: 5,
-        fontStyle: FontStyle.italic,
-        fontWeight: FontWeight.bold);
+        fontWeight: FontWeight.bold, fontSize: 18, color: Colors.grey);
     return InputDecoration(
       focusedBorder: border,
       enabledBorder: border,
-
-      // errorBorder:
-      //     border.copyWith(borderSide: BorderSide(color: Colors.red, width: 2)),
-      // focusedErrorBorder: border.copyWith(
-      //     borderSide: BorderSide(color: Colors.black, width: 2)),
-      contentPadding: EdgeInsets.only(left: 10, right: 20),
+      errorBorder:
+          border.copyWith(borderSide: BorderSide(color: Colors.red, width: 2)),
+      focusedErrorBorder: border.copyWith(
+          borderSide: BorderSide(color: Colors.black, width: 2)),
+      contentPadding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
       counterStyle: style,
       suffixStyle: style,
       errorStyle: style.copyWith(fontWeight: FontWeight.bold),
