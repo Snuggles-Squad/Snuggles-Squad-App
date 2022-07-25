@@ -146,6 +146,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "fluttericon",
+      "rootUri": "file:///Users/rameshmahapatra/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/fluttericon-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http",
       "rootUri": "file:///Users/rameshmahapatra/Desktop/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4",
       "packageUri": "lib/",
@@ -266,7 +272,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-07-24T12:56:40.103970Z",
+  "generated": "2022-07-25T05:24:00.444900Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }

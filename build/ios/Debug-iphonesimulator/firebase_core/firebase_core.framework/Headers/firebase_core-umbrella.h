@@ -10,13 +10,9 @@
 #endif
 #endif
 
-#import "FLTFirebaseCorePlugin 2.h"
 #import "FLTFirebaseCorePlugin.h"
-#import "FLTFirebasePlugin 2.h"
 #import "FLTFirebasePlugin.h"
-#import "FLTFirebasePluginRegistry 2.h"
 #import "FLTFirebasePluginRegistry.h"
-#import "messages.g 2.h"
 #import "messages.g.h"
 
 FOUNDATION_EXPORT double firebase_coreVersionNumber;

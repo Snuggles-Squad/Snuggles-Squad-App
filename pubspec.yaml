@@ -22,7 +22,7 @@ dev_dependencies:
     sdk: flutter
 
   firebase_auth: ^3.4.2
-
+  fluttericon: ^2.0.0
   flutter_lints: ^2.0.0
   cloud_firestore: ^3.3.0
   firebase_storage: ^10.3.2
