@@ -50,6 +50,7 @@ class _NewDashBoardScreenState extends State<NewDashBoardScreen> {
         title: Text(
           "snuggles",
           style: TextStyle(
+            fontWeight: FontWeight.bold,
             color: Color.fromARGB(255, 131, 46, 208),
           ),
         ),
@@ -70,16 +71,42 @@ class _NewDashBoardScreenState extends State<NewDashBoardScreen> {
       endDrawer: NewDrawerWidget(),
       body: Column(
         children: [
+          Text("welcome back chet!",
+              style: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.w900,
+              )),
+          SizedBox(
+            height: 20,
+          ),
           Expanded(
               child: GridView.builder(
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                  itemCount: 5,
+                  itemCount: 6,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       mainAxisSpacing: 10,
                       crossAxisSpacing: 10,
                       crossAxisCount: 2),
-                  itemBuilder: (context, index) =>
-                      buildGridItem(gridItems[index])))
+                  itemBuilder: (context, index) => index == 5
+                      ? Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              "Next",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Icon(
+                              FontAwesome5.arrow_right,
+                              size: 20,
+                            )
+                          ],
+                        )
+                      : buildGridItem(gridItems[index])))
         ],
       ),
     );
